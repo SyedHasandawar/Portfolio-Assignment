@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@300&family=Roboto:wght@100;300&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mulish:wght@700&family=Poppins:wght@300&family=Roboto:wght@100;300&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* Main container which contain having all navbar divs */
+.container {
+    background-color: #363543;
+    display: flex;
+    width: 100%;
+    height: 12vh;
+
+}
+
+
+/* This Div Contain 2 Div,
+1st Div Contain 2-Divs Name and List and 
+2nd Div Contain Icons 
+and i'm using flex box property to align and center side by side */
+
+.main-div {
+
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+/* This Div is for Emoji and Name and Contain flex property to align center and side by side */
+.logo-div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    margin-left: 157px;
+    /* background-color: rgb(0, 255, 51); */
+}
+
+/* Using H2 heading for my name and give color White  */
+h1 {
+    color: white;
+}
+
+/* List Divs  */
+
+.list {
+    /* background-color: aqua; */
+    width: 70%;
+    /* background-color: azure; */
+}
+
+/* This Div Contains Name,Emoji and List and containing flex property align side by side*/
+
+.sub-div {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+}
+
+/* Target ul to align side by side */
+
+.list ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Target Li to remove Bullet points, Change font size, and font color */
+.list ul li {
+    list-style-type: none;
+    font-size: 25px;
+    color: grey;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Apply Hover property when you will place the cursor on list it will change the color */
+.list ul li:hover {
+    color: white;
+}
+
+/* Icon-Divs which have only icons*/
+.icon-div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    height: 6vh;
+    /* position: relative; */
+    /* background-color: black; */
+}
+
+/* This the Second Main Div Container In whcih Name and Yellow-Line then Paragraph
+Circle Div and My-Picture and Service  */
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #363543;
+}
+
+/* A Div Which Contain My Name Div And Service Div */
+.Hero-div {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+    height: auto;
+    z-index: 1;
+    /* background-color: pink; */
+}
+
+
+
+/* My Name Div and Paragraph Div */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* width: 33.33%; */
+    width: 40%;
+    height: 43vh;
+    /* background-color: green; */
+}
+
+/* assigned for I'm change color */
+.i-am{
+    font-size: 40px;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* To Increase Size Of Heading */
+.my-name-heading{
+
+    font-size: 40px;
+
+}
+
+/* A line div Which is placed below my Name */
+
+.yellow-line {
+    background-color: yellow;
+    width: 159px;
+    height: 3px;
+}
+
+
+/* assigned For my Name and Para Color */
+p,
+h1,h2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+/* Paragraph Div */
+.para-div {
+    width: 70%;
+    font-size: 15px;
+    line-height: 25px;
+    /* background-color: blue; */
+}
+
+
+
+/* Service Main-Div */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    /* background-color: green; */
+    width: 38%;
+    height: 38vh;
+}
+
+/* service heading div */
+.service-div {
+    /* height: 6vh; */
+    font-family: 'Poppins', sans-serif;
+    /* background-color: aquamarine; */
+}
+
+
+/* Service Paragraph div */
+.service-para {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 25px;
+    /* background-color: aquamarine; */
+}
+
+/* Align Show More and Icon inline  */
+.show-more {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #373445; */
+}
+
+.show-more-para{
+    color: yellow;
+}
+
+/* change color of icon */
+.arr {
+    color: yellow;
+}
+
+/* Circle Div - Radius  */
+
+.div-circle {
+    width: 32vw;
+    height: 74vh;
+    border-radius: 50%;
+    background-color: #2D2D37;
+}
+
+.my-pic{
+    position: relative;
+    right: 13%;
+    /* bottom: 13%; */
+    
+}
+
+.div-circle {
+    position: absolute;
+
+}
+
+/* Service Icon Div and Align properties */
+.service-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    /* background-color: blue; */
+}
+
+/* Services icon background */
+.icon-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    background-color: #4C465F;
+    border-radius: 50%;
+}
+
+/* Service Icon width and Height */
+.service-icon img {
+    width: 25px;
+    height: 25px
+}
+
+/* Main Center Div Contain 4-Divs having Meta,Google,LinkedIn and Slack */
+
+.container-3 {
+
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    align-self: self-end;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #3F3E4E;
+    width: 80%;
+    height: 18vh;
+    top: 103%;
+    border-radius: 4px;
+    position: absolute;
+}
+
+/* Four Divs which Contain Social Media Icons */
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #373445;
+    width: 18%;
+    height: 10vh;
+}
+/* separate class for placing Icons and Text each-other */
+.linkedin{
+    justify-content: center;
+}
+
+.slack{
+    justify-content: center;
+
+}
+
+/* Google Icon Widht or Height */
+.google-img {
+
+    width: 121px;
+    height: 50px;
+}
+
+.linkedin-image{
+    width: 50px;
+    height: 50px;
+
+}
+
+/* meta div  */
+.meta{
+    display: flex;
+}
+
+
+
+
+/* main Container */
+.container-4 {
+    display: flex;
+    width: 100%;
+    height: 145vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #282834;
+    
+}
+
+/* Sub Div Allignment by flex to fix at the center */
+
+.main-container-sub-4{
+
+    width: 80%;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+
+/* more Sub Div Which Have 2 Divs left content and right content */
+.container-4-sub {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 57vh;
+    /* background-color: yellow; */
+}
+
+/* Assign yellow color to 250+,30+ */
+.total-project {
+    color: yellow;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+/* Paragraph for What can i do for your needs div */
+.paragraph {
+    font-size: 15px;
+}
+
+/* Font-Family */
+h2 {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Div For What can i do for your needs and para */
+.first-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     /* background-color: aquamarine; */
+    width: 43%;
+}
+
+
+/* Heading-Size */
+.what-can-i-do{
+    font-size: 50px;
+}
+
+/* Para-Size */
+.what-can-i-do-para{
+
+    font-size: 22px;
+
+}
+
+/* A div in which two div containing 
+1)250+ 100+ 2)30+ 10+ */
+.parent-div-250 {
+    display: flex;
+}
+
+
+/* two sub div containing 1)Project Complete and Contract remote 2)Community  and year experience */
+.saylani-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 17vh;
+}
+
+
+/* parent Right Side Work 3images 3arrows */
+
+.ui-ux {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 39%;
+    height: 59vh;
+    /* background-color: red; */
+    position: relative;
+}
+
+
+/* Three separate divs contains pic,Heading and arrow*/
+.ui-ux-divs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 23vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    border-bottom: 1px solid grey;
+}
+
+/* Div which Contain only pic and heading */
+.ui-ux-ui-ux{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:75% ;
+    height: 20vh;
+    /* background-color: black; */
+}
+
+/* width and height of right content image */
+.comp-image {
+    width: 150px;
+    height: 100px;
+}
+
+
+/* Give separate width Div which Contain only pic and heading */
+
+.ui-ux-design{
+    /* background-color: aqua; */
+    width: 65%;
+
+}
+
+/* Give separate width Div which Contain only pic and heading */
+
+.front-end-develop{
+    width: 75%;
+
+}
+
+/* Give separate width Div which Contain only pic and heading */
+
+.mob-app-develop{
+
+    width: 78%;
+
+}
+
+/* div Heading and para and give align column*/
+.ui-ux-child{
+    
+    /* background-color: darkorange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/* Headings */
+.ui-ux-heading {
+    position: relative;
+    left: 2%;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+
+}
+
+/* Main grand-parent div of three box */
+
+.last-three-main-div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    align-self: flex-end;
+    /* background-color: green; */
+
+}
+
+/* Parent div which have 3 separate divs */
+.parent-boxes{
+
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    /* background-color: darkgoldenrod; */
+    justify-content: space-between;
+    
+}
+
+
+/* Separate 3 divs and give same class to set align next each other, give same color */
+.last-three{
+    display: flex;
+    justify-content: space-around;
+    width: 32%;
+    height: 50vh;
+    border: 3px white;
+    background-color: #363543;
+}
+
+/* Div Contain icon, Headings and paragraph */
+
+.last-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    height: 38vh;
+    /* background-color: red; */
+}
+
+/* Div icon background  */
+
+.last-icon-background{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272731;
+    border-radius: 50%;
+}
+
+/* Icon width and height */
+.last-icons{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+/* Low Opacity Div and Give position to overlap to front */
+
+.footer{
+
+    width: 100%;
+    height: 15vh;
+    background-color: #363543;
+    opacity: 0.7;
+    position: absolute;
+    align-self: flex-end;
+}
